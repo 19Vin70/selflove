@@ -1,0 +1,191 @@
+.home {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: calc(100vh - 80px);
+}
+
+.home h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: 1.2px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.home h1 span {
+    background: linear-gradient(90deg, #ff105f, #ffad06);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.home p {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.home button {
+    padding: 10px 20px;
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    font-weight: 600;
+    color: #f0f8ff;
+    background: linear-gradient(90deg, #ff105f, #ffad06);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+}
+
+.home button:hover {
+    background: linear-gradient(90deg, #ffad06, #ff105f);
+    transition: .3s;
+}
+
+.category-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.category-modal .category-modal-content {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.category-modal .category-modal-content h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.category-modal .category-modal-content .category-modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #f0f8ff;
+    cursor: pointer;
+}
+
+.category-modal .category-modal-content .categories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    overflow-y: scroll;
+    max-height: 300px;
+}
+
+.category-modal .category-modal-content .categories .category {
+    padding: 10px;
+    background: #333;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.category-modal .category-modal-content .categories .category:hover {
+    background: #444;
+    transition: .3s;
+}
+
+.category-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.category-popup .category-popup-content {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.category-popup .category-popup-content h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.category-popup .category-popup-content h3 span {
+    background: linear-gradient(90deg, #ff105f, #ffad06);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.category-popup .category-popup-content .category-popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #f0f8ff;
+    cursor: pointer;
+}
+
+
+.category-popup .category-popup-content .quotes {
+    margin-top: 30px;
+}
+
+.category-popup .category-popup-content .quotes .quote {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.category-popup .category-popup-content .quotes .quote .quote-text {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.category-popup .category-popup-content .quotes .quote .quote-author {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #ff105f;
+}
+
+.category-popup .category-popup-content .quotes .quote .btns {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    margin-left: auto;
+}
+
+.category-popup .category-popup-content .quotes .quote .btns button {
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #f0f8ff;
+    background: linear-gradient(90deg, #ff105f, #ffad06);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+}
